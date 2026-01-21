@@ -1,90 +1,129 @@
 import numpy as np
 from qiskit.circuit.library import EfficientSU2
-from qiskit.quantum_info import random_statevector, random_unitary, Statevector, Operator, average_gate_fidelity
+from qiskit.quantum_info import random_statevector, random_unitary, Statevector, Operator, average_gate_fidelity, SparsePauliOp
 
 class QuantumObjective:
     """
     Universal Wrapper for Phase 2 Benchmarking.
-    Replaces 'benchmarks.py' from Phase 1.
+    Features:
+    - QuGStep (Adaptive Gradients)
+    - Realistic Noise Injection (Shot Noise + Gate Error)
+    - Problems: QML (States), COMPILER (Gates), CHEMISTRY (H4 Molecule)
     """
-    def __init__(self, num_qubits=3, num_layers=1, problem_type='QML', n_shots=1024):
+    def __init__(self, num_qubits=3, num_layers=1, problem_type='COMPILER', n_shots=1024, gate_error_rate=0.005):
         self.num_qubits = num_qubits
         self.num_layers = num_layers
         self.problem_type = problem_type
         self.n_shots = n_shots
+        self.gate_error_rate = gate_error_rate # NEW: 0.5% error per gate is realistic for NISQ
         self.history = []
         
-        # --- 1. Define the Target (The "Teacher") ---
+        # --- 1. Define the Target (The Problem) ---
         if self.problem_type == 'QML':
-            # Target is a random state vector (Data)
             self.target = random_statevector(2**num_qubits)
+            
         elif self.problem_type == 'COMPILER':
-            # Target is a random Unitary Gate (Algorithm)
             self.target = random_unitary(2**num_qubits)
             
-        # --- 2. Define the Model (The "Student") ---
-        # Hardware Efficient Ansatz (standard for Barren Plateau research)
-        self.ansatz = EfficientSU2(num_qubits, reps=num_layers, entanglement='linear')
+        elif self.problem_type == 'CHEMISTRY':
+            # H4 Molecule Hamiltonian (Pre-computed for Stretched Geometry R=2.5A)
+            # This represents the "Stiff Valley" (Strong Correlation)
+            # Simplified 2-qubit model (Parity mapping) for speed
+            self.target = SparsePauliOp.from_list([
+                 ("II", -0.4804), ("IZ", 0.3435), ("ZI", -0.4347), 
+                 ("ZZ", 0.5716),  ("XX", 0.1809)
+            ])
+            self.num_qubits = 2 # Override for chemistry
+            
+        # --- 2. Define the Model (The Ansatz) ---
+        self.ansatz = EfficientSU2(self.num_qubits, reps=num_layers, entanglement='linear')
 
     def func(self, params):
         """
-        The Cost Function: 1.0 - Fidelity.
+        Calculates Cost with REALISTIC Noise Simulation.
+        Cost = Signal_Decay(Exact_Cost) + Shot_Noise
         """
-        # Bind parameters to the circuit
-        # FIX: bind_parameters -> assign_parameters for Qiskit 1.0+
+        # 1. Exact Simulation (The "True" Math)
         qc = self.ansatz.assign_parameters(params)
         
-        # --- Calculate Fidelity (Mathematically Exact) ---
-        if self.problem_type == 'QML':
-            # State Fidelity: |<target|predicted>|^2
+        if self.problem_type == 'CHEMISTRY':
+            # VQE Energy Expectation Value
+            state = Statevector(qc)
+            exact_val = state.expectation_value(self.target).real
+            # Normalize for plotting (Energy is usually negative, we want to minimize)
+            # Shift it so Global Minimum is approx 0.0 for easier visualization
+            exact_cost = exact_val + 1.1 
+            
+        elif self.problem_type == 'QML':
             pred_state = Statevector(qc)
             fidelity = abs(pred_state.inner(self.target))**2
+            exact_cost = 1.0 - fidelity
             
         elif self.problem_type == 'COMPILER':
-            # Process Fidelity: How close is the Unitary U_pred to U_target?
             U_pred = Operator(qc)
             fidelity = average_gate_fidelity(U_pred, self.target)
+            exact_cost = 1.0 - fidelity
 
-        # --- Inject "Real" Shot Noise ---
-        # We simulate the uncertainty of measuring this on a real chip.
+        # 2. STRUCTURAL NOISE (Gate Errors / Depolarizing) [NEW]
+        # Real hardware loses signal as depth increases.
+        if self.gate_error_rate > 0:
+            # Estimate circuit volume (how many places errors can happen)
+            # Approx: (N_qubits * Layers)
+            volume = self.num_qubits * (self.num_layers + 1)
+            
+            # Survival Probability: P_clean = (1 - error)^Volume
+            p_clean = (1 - self.gate_error_rate) ** volume
+            
+            # The signal decays towards "Random Guess"
+            # Random guess for Fidelity is 1/2^N. Random guess for Cost is ~1.0.
+            noise_floor = 1.0 - (1.0 / (2**self.num_qubits))
+            
+            # Degraded Cost = Clean_Signal + Noise_Mix
+            noisy_cost = (p_clean * exact_cost) + ((1 - p_clean) * noise_floor)
+        else:
+            noisy_cost = exact_cost
+
+        # 3. STATISTICAL NOISE (Shot Noise)
+        # Real measurement adds Gaussian jitter
         if self.n_shots is not None:
             sigma = 1.0 / np.sqrt(self.n_shots)
-            noise = np.random.normal(0, sigma)
-            fidelity = np.clip(fidelity + noise, 0.0, 1.0)
+            jitter = np.random.normal(0, sigma)
+            final_cost = noisy_cost + jitter
+        else:
+            final_cost = noisy_cost
             
-        return 1.0 - fidelity
+        return final_cost
 
     def get_adaptive_gradient(self, params):
         """
-        YOUR RESEARCH CONTRIBUTION: QuGStep (Adaptive Finite Difference).
-        Formula: epsilon ~ (Noise / Shots)^0.25
+        QuGStep: Adaptive Finite Difference.
         """
-        # 1. Determine Adaptive Step Size
         if self.n_shots is None:
             epsilon = 1e-6 
         else:
-            # Heuristic derived from the QuGStep paper logic
+            # Noise estimate now includes gate error impact!
             noise_est = 1.0 / np.sqrt(self.n_shots)
-            # The '8' and power '0.25' come from balancing truncation vs variance error
             epsilon = (8 * noise_est**2)**0.25 
-            epsilon = np.clip(epsilon, 1e-3, 0.2) # Safety bounds
+            epsilon = np.clip(epsilon, 1e-3, 0.2)
 
-        # 2. Compute Gradient
         grad = np.zeros_like(params)
         for i in range(len(params)):
-            params_plus = params.copy()
-            params_minus = params.copy()
+            p_p = params.copy(); p_p[i] += epsilon
+            p_m = params.copy(); p_m[i] -= epsilon
+            grad[i] = (self.func(p_p) - self.func(p_m)) / (2 * epsilon)
             
-            # Apply Adaptive Step Size
-            params_plus[i] += epsilon
-            params_minus[i] -= epsilon
-            
-            # Note: We use the noisy func() here!
-            c_plus = self.func(params_plus)
-            c_minus = self.func(params_minus)
-            
-            grad[i] = (c_plus - c_minus) / (2 * epsilon)
-            
+        return grad
+
+    def get_parameter_shift_gradient(self, params):
+        """Exact PSR Gradient"""
+        grad = np.zeros_like(params)
+        shift = np.pi / 2
+        for i in range(len(params)):
+            p_p = params.copy(); p_p[i] += shift
+            p_m = params.copy(); p_m[i] -= shift
+            # PSR assumes the underlying function is noiseless trigonometric
+            # We average 2 shots per point to be robust
+            grad[i] = 0.5 * (self.func(p_p) - self.func(p_m))
         return grad
 
     def get_num_params(self):
