@@ -1,0 +1,36 @@
+2026-01-28 12:25:59,263 - INFO - [START] Experiment Initialized: Exp02_Robustness_20260128_122559_ce86
+2026-01-28 12:25:59,264 - INFO - [CONFIG] Configuration: {
+  "shot_levels": [
+    100,
+    500,
+    1000,
+    5000
+  ],
+  "fixed_depth": 8
+}
+2026-01-28 12:26:16,456 - INFO - Step 5: Progress: 5/120
+2026-01-28 12:39:32,634 - INFO - Step 10: Progress: 10/120
+2026-01-28 12:39:42,016 - INFO - Step 15: Progress: 15/120
+2026-01-28 12:39:51,079 - INFO - Step 20: Progress: 20/120
+2026-01-28 12:56:32,019 - INFO - Step 25: Progress: 25/120
+2026-01-28 12:56:45,638 - INFO - Step 30: Progress: 30/120
+2026-01-28 12:56:58,538 - INFO - Step 35: Progress: 35/120
+2026-01-28 12:57:19,514 - INFO - Step 40: Progress: 40/120
+2026-01-28 13:14:39,538 - INFO - Step 45: Progress: 45/120
+2026-01-28 13:14:58,902 - INFO - Step 50: Progress: 50/120
+2026-01-28 13:15:25,795 - INFO - Step 55: Progress: 55/120
+2026-01-28 13:16:03,294 - INFO - Step 60: Progress: 60/120
+2026-01-28 13:34:32,731 - INFO - Step 65: Progress: 65/120
+2026-01-28 13:34:50,362 - INFO - Step 70: Progress: 70/120
+2026-01-28 13:35:38,446 - INFO - Step 75: Progress: 75/120
+2026-01-28 13:56:21,456 - INFO - Step 80: Progress: 80/120
+2026-01-28 13:56:40,535 - INFO - Step 85: Progress: 85/120
+2026-01-28 13:56:58,539 - INFO - Step 90: Progress: 90/120
+2026-01-28 13:57:46,925 - INFO - Step 95: Progress: 95/120
+2026-01-28 14:14:31,638 - INFO - Step 100: Progress: 100/120
+2026-01-28 14:14:44,206 - INFO - Step 105: Progress: 105/120
+2026-01-28 14:15:12,736 - INFO - Step 110: Progress: 110/120
+2026-01-28 14:29:45,712 - INFO - Step 115: Progress: 115/120
+2026-01-28 14:30:05,320 - INFO - Step 120: Progress: 120/120
+2026-01-28 14:30:05,873 - INFO - [DONE] Run Complete.
+2026-01-28 14:30:05,895 - INFO - [SAVED] Results saved to: results\Exp02_Robustness_20260128_122559_ce86\metrics.json

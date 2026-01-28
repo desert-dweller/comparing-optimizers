@@ -1,0 +1,978 @@
+{
+    "history": [
+        {
+            "step": 5,
+            "timestamp": 17.191871881484985,
+            "info": "Progress: 5/120"
+        },
+        {
+            "step": 10,
+            "timestamp": 813.3697521686554,
+            "info": "Progress: 10/120"
+        },
+        {
+            "step": 15,
+            "timestamp": 822.7517104148865,
+            "info": "Progress: 15/120"
+        },
+        {
+            "step": 20,
+            "timestamp": 831.8153884410858,
+            "info": "Progress: 20/120"
+        },
+        {
+            "step": 25,
+            "timestamp": 1832.7554528713226,
+            "info": "Progress: 25/120"
+        },
+        {
+            "step": 30,
+            "timestamp": 1846.3737344741821,
+            "info": "Progress: 30/120"
+        },
+        {
+            "step": 35,
+            "timestamp": 1859.2745842933655,
+            "info": "Progress: 35/120"
+        },
+        {
+            "step": 40,
+            "timestamp": 1880.24990940094,
+            "info": "Progress: 40/120"
+        },
+        {
+            "step": 45,
+            "timestamp": 2920.274552345276,
+            "info": "Progress: 45/120"
+        },
+        {
+            "step": 50,
+            "timestamp": 2939.6378512382507,
+            "info": "Progress: 50/120"
+        },
+        {
+            "step": 55,
+            "timestamp": 2966.531091451645,
+            "info": "Progress: 55/120"
+        },
+        {
+            "step": 60,
+            "timestamp": 3004.0297377109528,
+            "info": "Progress: 60/120"
+        },
+        {
+            "step": 65,
+            "timestamp": 4113.467460632324,
+            "info": "Progress: 65/120"
+        },
+        {
+            "step": 70,
+            "timestamp": 4131.09818482399,
+            "info": "Progress: 70/120"
+        },
+        {
+            "step": 75,
+            "timestamp": 4179.181927442551,
+            "info": "Progress: 75/120"
+        },
+        {
+            "step": 80,
+            "timestamp": 5422.192136764526,
+            "info": "Progress: 80/120"
+        },
+        {
+            "step": 85,
+            "timestamp": 5441.271567821503,
+            "info": "Progress: 85/120"
+        },
+        {
+            "step": 90,
+            "timestamp": 5459.275586843491,
+            "info": "Progress: 90/120"
+        },
+        {
+            "step": 95,
+            "timestamp": 5507.661198139191,
+            "info": "Progress: 95/120"
+        },
+        {
+            "step": 100,
+            "timestamp": 6512.37376832962,
+            "info": "Progress: 100/120"
+        },
+        {
+            "step": 105,
+            "timestamp": 6524.941623926163,
+            "info": "Progress: 105/120"
+        },
+        {
+            "step": 110,
+            "timestamp": 6553.4722373485565,
+            "info": "Progress: 110/120"
+        },
+        {
+            "step": 115,
+            "timestamp": 7426.4484803676605,
+            "info": "Progress: 115/120"
+        },
+        {
+            "step": 120,
+            "timestamp": 7446.056190252304,
+            "info": "Progress: 120/120"
+        }
+    ],
+    "final_summary": {
+        "duration": 7446.608608007431
+    },
+    "config": {
+        "shot_levels": [
+            100,
+            500,
+            1000,
+            5000
+        ],
+        "fixed_depth": 8
+    },
+    "results": [
+        {
+            "shots": 100,
+            "trial": 1,
+            "opt": "SPSA",
+            "seed": 1099,
+            "final_cost": -0.19999999999999998
+        },
+        {
+            "shots": 100,
+            "trial": 0,
+            "opt": "SPSA",
+            "seed": 100,
+            "final_cost": -0.11999999999999998
+        },
+        {
+            "shots": 100,
+            "trial": 3,
+            "opt": "SPSA",
+            "seed": 3097,
+            "final_cost": -0.36000000000000004
+        },
+        {
+            "shots": 100,
+            "trial": 2,
+            "opt": "SPSA",
+            "seed": 2098,
+            "final_cost": 0.36
+        },
+        {
+            "shots": 100,
+            "trial": 4,
+            "opt": "SPSA",
+            "seed": 4096,
+            "final_cost": -0.9199999999999999
+        },
+        {
+            "shots": 100,
+            "trial": 5,
+            "opt": "SPSA",
+            "seed": 5095,
+            "final_cost": -0.5199999999999999
+        },
+        {
+            "shots": 100,
+            "trial": 3,
+            "opt": "Adam",
+            "seed": 3097,
+            "final_cost": -0.76
+        },
+        {
+            "shots": 100,
+            "trial": 0,
+            "opt": "Adam",
+            "seed": 100,
+            "final_cost": 0.2800000000000001
+        },
+        {
+            "shots": 100,
+            "trial": 1,
+            "opt": "QuGStep",
+            "seed": 1099,
+            "final_cost": -4.32
+        },
+        {
+            "shots": 100,
+            "trial": 0,
+            "opt": "QuGStep",
+            "seed": 100,
+            "final_cost": -5.2
+        },
+        {
+            "shots": 100,
+            "trial": 2,
+            "opt": "QuGStep",
+            "seed": 2098,
+            "final_cost": -4.6000000000000005
+        },
+        {
+            "shots": 100,
+            "trial": 2,
+            "opt": "Adam",
+            "seed": 2098,
+            "final_cost": -0.03999999999999998
+        },
+        {
+            "shots": 100,
+            "trial": 3,
+            "opt": "QuGStep",
+            "seed": 3097,
+            "final_cost": -5.279999999999999
+        },
+        {
+            "shots": 100,
+            "trial": 1,
+            "opt": "Adam",
+            "seed": 1099,
+            "final_cost": -0.44000000000000006
+        },
+        {
+            "shots": 100,
+            "trial": 6,
+            "opt": "SPSA",
+            "seed": 6094,
+            "final_cost": -0.27999999999999997
+        },
+        {
+            "shots": 100,
+            "trial": 4,
+            "opt": "Adam",
+            "seed": 4096,
+            "final_cost": -0.32
+        },
+        {
+            "shots": 100,
+            "trial": 7,
+            "opt": "SPSA",
+            "seed": 7093,
+            "final_cost": 0.15999999999999998
+        },
+        {
+            "shots": 100,
+            "trial": 5,
+            "opt": "Adam",
+            "seed": 5095,
+            "final_cost": -0.88
+        },
+        {
+            "shots": 100,
+            "trial": 4,
+            "opt": "QuGStep",
+            "seed": 4096,
+            "final_cost": -5.4
+        },
+        {
+            "shots": 100,
+            "trial": 8,
+            "opt": "SPSA",
+            "seed": 8092,
+            "final_cost": -0.28
+        },
+        {
+            "shots": 100,
+            "trial": 9,
+            "opt": "SPSA",
+            "seed": 9091,
+            "final_cost": -0.20000000000000004
+        },
+        {
+            "shots": 500,
+            "trial": 0,
+            "opt": "SPSA",
+            "seed": 500,
+            "final_cost": -0.8079999999999998
+        },
+        {
+            "shots": 100,
+            "trial": 5,
+            "opt": "QuGStep",
+            "seed": 5095,
+            "final_cost": -5.4
+        },
+        {
+            "shots": 500,
+            "trial": 1,
+            "opt": "SPSA",
+            "seed": 1499,
+            "final_cost": -0.624
+        },
+        {
+            "shots": 100,
+            "trial": 6,
+            "opt": "Adam",
+            "seed": 6094,
+            "final_cost": -0.6000000000000001
+        },
+        {
+            "shots": 100,
+            "trial": 6,
+            "opt": "QuGStep",
+            "seed": 6094,
+            "final_cost": -4.6
+        },
+        {
+            "shots": 100,
+            "trial": 7,
+            "opt": "Adam",
+            "seed": 7093,
+            "final_cost": -0.6799999999999999
+        },
+        {
+            "shots": 100,
+            "trial": 7,
+            "opt": "QuGStep",
+            "seed": 7093,
+            "final_cost": -4.52
+        },
+        {
+            "shots": 100,
+            "trial": 8,
+            "opt": "Adam",
+            "seed": 8092,
+            "final_cost": -0.12000000000000005
+        },
+        {
+            "shots": 100,
+            "trial": 8,
+            "opt": "QuGStep",
+            "seed": 8092,
+            "final_cost": -4.76
+        },
+        {
+            "shots": 100,
+            "trial": 9,
+            "opt": "Adam",
+            "seed": 9091,
+            "final_cost": 0.44
+        },
+        {
+            "shots": 500,
+            "trial": 2,
+            "opt": "SPSA",
+            "seed": 2498,
+            "final_cost": -1.024
+        },
+        {
+            "shots": 100,
+            "trial": 9,
+            "opt": "QuGStep",
+            "seed": 9091,
+            "final_cost": -4.96
+        },
+        {
+            "shots": 500,
+            "trial": 3,
+            "opt": "SPSA",
+            "seed": 3497,
+            "final_cost": -0.96
+        },
+        {
+            "shots": 500,
+            "trial": 0,
+            "opt": "Adam",
+            "seed": 500,
+            "final_cost": -0.672
+        },
+        {
+            "shots": 500,
+            "trial": 4,
+            "opt": "SPSA",
+            "seed": 4496,
+            "final_cost": -0.632
+        },
+        {
+            "shots": 500,
+            "trial": 0,
+            "opt": "QuGStep",
+            "seed": 500,
+            "final_cost": -4.728000000000001
+        },
+        {
+            "shots": 500,
+            "trial": 5,
+            "opt": "SPSA",
+            "seed": 5495,
+            "final_cost": -0.9760000000000001
+        },
+        {
+            "shots": 500,
+            "trial": 1,
+            "opt": "Adam",
+            "seed": 1499,
+            "final_cost": -0.48000000000000004
+        },
+        {
+            "shots": 500,
+            "trial": 6,
+            "opt": "SPSA",
+            "seed": 6494,
+            "final_cost": -1.056
+        },
+        {
+            "shots": 500,
+            "trial": 1,
+            "opt": "QuGStep",
+            "seed": 1499,
+            "final_cost": -4.736
+        },
+        {
+            "shots": 500,
+            "trial": 7,
+            "opt": "SPSA",
+            "seed": 7493,
+            "final_cost": -0.7040000000000001
+        },
+        {
+            "shots": 500,
+            "trial": 2,
+            "opt": "Adam",
+            "seed": 2498,
+            "final_cost": -0.776
+        },
+        {
+            "shots": 500,
+            "trial": 2,
+            "opt": "QuGStep",
+            "seed": 2498,
+            "final_cost": -4.688000000000001
+        },
+        {
+            "shots": 500,
+            "trial": 3,
+            "opt": "QuGStep",
+            "seed": 3497,
+            "final_cost": -4.216
+        },
+        {
+            "shots": 500,
+            "trial": 3,
+            "opt": "Adam",
+            "seed": 3497,
+            "final_cost": 0.03999999999999998
+        },
+        {
+            "shots": 500,
+            "trial": 4,
+            "opt": "Adam",
+            "seed": 4496,
+            "final_cost": -0.384
+        },
+        {
+            "shots": 500,
+            "trial": 8,
+            "opt": "SPSA",
+            "seed": 8492,
+            "final_cost": -0.72
+        },
+        {
+            "shots": 500,
+            "trial": 5,
+            "opt": "Adam",
+            "seed": 5495,
+            "final_cost": -0.21600000000000003
+        },
+        {
+            "shots": 500,
+            "trial": 5,
+            "opt": "QuGStep",
+            "seed": 5495,
+            "final_cost": -5.192
+        },
+        {
+            "shots": 500,
+            "trial": 4,
+            "opt": "QuGStep",
+            "seed": 4496,
+            "final_cost": -3.7840000000000003
+        },
+        {
+            "shots": 500,
+            "trial": 9,
+            "opt": "SPSA",
+            "seed": 9491,
+            "final_cost": -0.6479999999999999
+        },
+        {
+            "shots": 500,
+            "trial": 6,
+            "opt": "Adam",
+            "seed": 6494,
+            "final_cost": -0.288
+        },
+        {
+            "shots": 1000,
+            "trial": 0,
+            "opt": "SPSA",
+            "seed": 1000,
+            "final_cost": -0.6719999999999999
+        },
+        {
+            "shots": 1000,
+            "trial": 1,
+            "opt": "SPSA",
+            "seed": 1999,
+            "final_cost": -0.7800000000000001
+        },
+        {
+            "shots": 500,
+            "trial": 7,
+            "opt": "Adam",
+            "seed": 7493,
+            "final_cost": -0.528
+        },
+        {
+            "shots": 500,
+            "trial": 6,
+            "opt": "QuGStep",
+            "seed": 6494,
+            "final_cost": -4.848000000000001
+        },
+        {
+            "shots": 1000,
+            "trial": 2,
+            "opt": "SPSA",
+            "seed": 2998,
+            "final_cost": -1.2
+        },
+        {
+            "shots": 500,
+            "trial": 7,
+            "opt": "QuGStep",
+            "seed": 7493,
+            "final_cost": -5.032
+        },
+        {
+            "shots": 1000,
+            "trial": 3,
+            "opt": "SPSA",
+            "seed": 3997,
+            "final_cost": -0.728
+        },
+        {
+            "shots": 500,
+            "trial": 8,
+            "opt": "Adam",
+            "seed": 8492,
+            "final_cost": -1.064
+        },
+        {
+            "shots": 500,
+            "trial": 8,
+            "opt": "QuGStep",
+            "seed": 8492,
+            "final_cost": -4.928
+        },
+        {
+            "shots": 500,
+            "trial": 9,
+            "opt": "Adam",
+            "seed": 9491,
+            "final_cost": -0.30400000000000005
+        },
+        {
+            "shots": 500,
+            "trial": 9,
+            "opt": "QuGStep",
+            "seed": 9491,
+            "final_cost": -4.736
+        },
+        {
+            "shots": 1000,
+            "trial": 4,
+            "opt": "SPSA",
+            "seed": 4996,
+            "final_cost": -0.544
+        },
+        {
+            "shots": 1000,
+            "trial": 1,
+            "opt": "Adam",
+            "seed": 1999,
+            "final_cost": -0.48
+        },
+        {
+            "shots": 1000,
+            "trial": 0,
+            "opt": "QuGStep",
+            "seed": 1000,
+            "final_cost": -4.796
+        },
+        {
+            "shots": 1000,
+            "trial": 5,
+            "opt": "SPSA",
+            "seed": 5995,
+            "final_cost": -0.84
+        },
+        {
+            "shots": 1000,
+            "trial": 0,
+            "opt": "Adam",
+            "seed": 1000,
+            "final_cost": -0.516
+        },
+        {
+            "shots": 1000,
+            "trial": 1,
+            "opt": "QuGStep",
+            "seed": 1999,
+            "final_cost": -5.056
+        },
+        {
+            "shots": 1000,
+            "trial": 6,
+            "opt": "SPSA",
+            "seed": 6994,
+            "final_cost": -0.916
+        },
+        {
+            "shots": 1000,
+            "trial": 2,
+            "opt": "Adam",
+            "seed": 2998,
+            "final_cost": -0.632
+        },
+        {
+            "shots": 1000,
+            "trial": 7,
+            "opt": "SPSA",
+            "seed": 7993,
+            "final_cost": -1.056
+        },
+        {
+            "shots": 1000,
+            "trial": 2,
+            "opt": "QuGStep",
+            "seed": 2998,
+            "final_cost": -5.1160000000000005
+        },
+        {
+            "shots": 1000,
+            "trial": 3,
+            "opt": "Adam",
+            "seed": 3997,
+            "final_cost": -1.012
+        },
+        {
+            "shots": 1000,
+            "trial": 8,
+            "opt": "SPSA",
+            "seed": 8992,
+            "final_cost": -1.004
+        },
+        {
+            "shots": 1000,
+            "trial": 3,
+            "opt": "QuGStep",
+            "seed": 3997,
+            "final_cost": -5.36
+        },
+        {
+            "shots": 1000,
+            "trial": 9,
+            "opt": "SPSA",
+            "seed": 9991,
+            "final_cost": -0.524
+        },
+        {
+            "shots": 1000,
+            "trial": 4,
+            "opt": "Adam",
+            "seed": 4996,
+            "final_cost": -1.016
+        },
+        {
+            "shots": 1000,
+            "trial": 4,
+            "opt": "QuGStep",
+            "seed": 4996,
+            "final_cost": -4.568
+        },
+        {
+            "shots": 1000,
+            "trial": 5,
+            "opt": "Adam",
+            "seed": 5995,
+            "final_cost": -0.9560000000000001
+        },
+        {
+            "shots": 5000,
+            "trial": 0,
+            "opt": "SPSA",
+            "seed": 5000,
+            "final_cost": -1.1736
+        },
+        {
+            "shots": 1000,
+            "trial": 5,
+            "opt": "QuGStep",
+            "seed": 5995,
+            "final_cost": -4.792
+        },
+        {
+            "shots": 1000,
+            "trial": 6,
+            "opt": "Adam",
+            "seed": 6994,
+            "final_cost": -0.744
+        },
+        {
+            "shots": 1000,
+            "trial": 6,
+            "opt": "QuGStep",
+            "seed": 6994,
+            "final_cost": -4.675999999999999
+        },
+        {
+            "shots": 5000,
+            "trial": 1,
+            "opt": "SPSA",
+            "seed": 5999,
+            "final_cost": -1.2680000000000002
+        },
+        {
+            "shots": 1000,
+            "trial": 7,
+            "opt": "Adam",
+            "seed": 7993,
+            "final_cost": -0.432
+        },
+        {
+            "shots": 1000,
+            "trial": 8,
+            "opt": "Adam",
+            "seed": 8992,
+            "final_cost": -0.368
+        },
+        {
+            "shots": 5000,
+            "trial": 2,
+            "opt": "SPSA",
+            "seed": 6998,
+            "final_cost": -1.1864
+        },
+        {
+            "shots": 1000,
+            "trial": 7,
+            "opt": "QuGStep",
+            "seed": 7993,
+            "final_cost": -4.64
+        },
+        {
+            "shots": 5000,
+            "trial": 3,
+            "opt": "SPSA",
+            "seed": 7997,
+            "final_cost": -0.9288
+        },
+        {
+            "shots": 1000,
+            "trial": 8,
+            "opt": "QuGStep",
+            "seed": 8992,
+            "final_cost": -5.1
+        },
+        {
+            "shots": 1000,
+            "trial": 9,
+            "opt": "Adam",
+            "seed": 9991,
+            "final_cost": -0.43199999999999994
+        },
+        {
+            "shots": 5000,
+            "trial": 4,
+            "opt": "SPSA",
+            "seed": 8996,
+            "final_cost": -1.0888
+        },
+        {
+            "shots": 1000,
+            "trial": 9,
+            "opt": "QuGStep",
+            "seed": 9991,
+            "final_cost": -5.012
+        },
+        {
+            "shots": 5000,
+            "trial": 5,
+            "opt": "SPSA",
+            "seed": 9995,
+            "final_cost": -0.9775999999999999
+        },
+        {
+            "shots": 5000,
+            "trial": 0,
+            "opt": "Adam",
+            "seed": 5000,
+            "final_cost": -1.8816000000000002
+        },
+        {
+            "shots": 5000,
+            "trial": 0,
+            "opt": "QuGStep",
+            "seed": 5000,
+            "final_cost": -4.0968
+        },
+        {
+            "shots": 5000,
+            "trial": 1,
+            "opt": "Adam",
+            "seed": 5999,
+            "final_cost": -1.58
+        },
+        {
+            "shots": 5000,
+            "trial": 1,
+            "opt": "QuGStep",
+            "seed": 5999,
+            "final_cost": -4.159199999999999
+        },
+        {
+            "shots": 5000,
+            "trial": 2,
+            "opt": "Adam",
+            "seed": 6998,
+            "final_cost": -1.4624000000000001
+        },
+        {
+            "shots": 5000,
+            "trial": 6,
+            "opt": "SPSA",
+            "seed": 10994,
+            "final_cost": -0.9992
+        },
+        {
+            "shots": 5000,
+            "trial": 2,
+            "opt": "QuGStep",
+            "seed": 6998,
+            "final_cost": -4.6048
+        },
+        {
+            "shots": 5000,
+            "trial": 7,
+            "opt": "SPSA",
+            "seed": 11993,
+            "final_cost": -1.2824
+        },
+        {
+            "shots": 5000,
+            "trial": 3,
+            "opt": "Adam",
+            "seed": 7997,
+            "final_cost": -1.4368
+        },
+        {
+            "shots": 5000,
+            "trial": 3,
+            "opt": "QuGStep",
+            "seed": 7997,
+            "final_cost": -4.584
+        },
+        {
+            "shots": 5000,
+            "trial": 8,
+            "opt": "SPSA",
+            "seed": 12992,
+            "final_cost": -1.0592
+        },
+        {
+            "shots": 5000,
+            "trial": 4,
+            "opt": "Adam",
+            "seed": 8996,
+            "final_cost": -2.0423999999999998
+        },
+        {
+            "shots": 5000,
+            "trial": 9,
+            "opt": "SPSA",
+            "seed": 13991,
+            "final_cost": -1.1336
+        },
+        {
+            "shots": 5000,
+            "trial": 4,
+            "opt": "QuGStep",
+            "seed": 8996,
+            "final_cost": -4.332
+        },
+        {
+            "shots": 5000,
+            "trial": 5,
+            "opt": "Adam",
+            "seed": 9995,
+            "final_cost": -1.8984
+        },
+        {
+            "shots": 5000,
+            "trial": 5,
+            "opt": "QuGStep",
+            "seed": 9995,
+            "final_cost": -5.0168
+        },
+        {
+            "shots": 5000,
+            "trial": 6,
+            "opt": "Adam",
+            "seed": 10994,
+            "final_cost": -2.1656
+        },
+        {
+            "shots": 5000,
+            "trial": 6,
+            "opt": "QuGStep",
+            "seed": 10994,
+            "final_cost": -4.864
+        },
+        {
+            "shots": 5000,
+            "trial": 7,
+            "opt": "QuGStep",
+            "seed": 11993,
+            "final_cost": -4.828799999999999
+        },
+        {
+            "shots": 5000,
+            "trial": 7,
+            "opt": "Adam",
+            "seed": 11993,
+            "final_cost": -1.2151999999999998
+        },
+        {
+            "shots": 5000,
+            "trial": 8,
+            "opt": "Adam",
+            "seed": 12992,
+            "final_cost": -1.0112
+        },
+        {
+            "shots": 5000,
+            "trial": 8,
+            "opt": "QuGStep",
+            "seed": 12992,
+            "final_cost": -4.7288
+        },
+        {
+            "shots": 5000,
+            "trial": 9,
+            "opt": "Adam",
+            "seed": 13991,
+            "final_cost": -1.2232
+        },
+        {
+            "shots": 5000,
+            "trial": 9,
+            "opt": "QuGStep",
+            "seed": 13991,
+            "final_cost": -4.7328
+        }
+    ]
+}

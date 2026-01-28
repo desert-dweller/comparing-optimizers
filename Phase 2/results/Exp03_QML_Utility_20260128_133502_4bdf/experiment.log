@@ -1,0 +1,13 @@
+2026-01-28 13:35:02,875 - INFO - [START] Experiment Initialized: Exp03_QML_Utility_20260128_133502_4bdf
+2026-01-28 13:35:02,875 - INFO - [CONFIG] Configuration: {
+  "depth": 4,
+  "samples": 60
+}
+2026-01-28 13:45:40,470 - INFO - Step 5: Progress: 5/30
+2026-01-28 15:08:43,363 - INFO - Step 10: Progress: 10/30
+2026-01-28 15:09:47,871 - INFO - Step 15: Progress: 15/30
+2026-01-28 15:10:09,680 - INFO - Step 20: Progress: 20/30
+2026-01-28 16:04:11,970 - INFO - Step 25: Progress: 25/30
+2026-01-28 16:05:20,598 - INFO - Step 30: Progress: 30/30
+2026-01-28 16:05:21,096 - INFO - [DONE] Run Complete.
+2026-01-28 16:05:21,096 - INFO - [SAVED] Results saved to: results\Exp03_QML_Utility_20260128_133502_4bdf\metrics.json

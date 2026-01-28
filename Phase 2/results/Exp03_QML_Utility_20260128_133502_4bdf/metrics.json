@@ -1,0 +1,283 @@
+{
+    "history": [
+        {
+            "step": 5,
+            "timestamp": 637.5951690673828,
+            "info": "Progress: 5/30"
+        },
+        {
+            "step": 10,
+            "timestamp": 5620.487993955612,
+            "info": "Progress: 10/30"
+        },
+        {
+            "step": 15,
+            "timestamp": 5684.996360063553,
+            "info": "Progress: 15/30"
+        },
+        {
+            "step": 20,
+            "timestamp": 5706.805302619934,
+            "info": "Progress: 20/30"
+        },
+        {
+            "step": 25,
+            "timestamp": 8949.094651222229,
+            "info": "Progress: 25/30"
+        },
+        {
+            "step": 30,
+            "timestamp": 9017.723393678665,
+            "info": "Progress: 30/30"
+        }
+    ],
+    "final_summary": {
+        "duration": 9018.220915079117
+    },
+    "config": {
+        "depth": 4,
+        "samples": 60
+    },
+    "results": [
+        {
+            "trial": 1,
+            "opt": "SPSA",
+            "seed": 555,
+            "final_train_loss": 0.5106575999999999,
+            "final_test_loss": 0.49196596,
+            "accuracy_score": 0.5080340400000001
+        },
+        {
+            "trial": 0,
+            "opt": "SPSA",
+            "seed": 0,
+            "final_train_loss": 0.6545366666666667,
+            "final_test_loss": 0.6455357200000001,
+            "accuracy_score": 0.35446427999999985
+        },
+        {
+            "trial": 3,
+            "opt": "SPSA",
+            "seed": 1665,
+            "final_train_loss": 0.6474416666666668,
+            "final_test_loss": 0.6548013999999999,
+            "accuracy_score": 0.34519860000000013
+        },
+        {
+            "trial": 2,
+            "opt": "SPSA",
+            "seed": 1110,
+            "final_train_loss": 0.5693457999999999,
+            "final_test_loss": 0.5654879599999999,
+            "accuracy_score": 0.4345120400000001
+        },
+        {
+            "trial": 4,
+            "opt": "SPSA",
+            "seed": 2220,
+            "final_train_loss": 0.5842186666666666,
+            "final_test_loss": 0.5659992400000002,
+            "accuracy_score": 0.43400075999999976
+        },
+        {
+            "trial": 5,
+            "opt": "SPSA",
+            "seed": 2775,
+            "final_train_loss": 0.5235147333333334,
+            "final_test_loss": 0.501124,
+            "accuracy_score": 0.498876
+        },
+        {
+            "trial": 2,
+            "opt": "QuGStep",
+            "seed": 1110,
+            "final_train_loss": 0.6006844,
+            "final_test_loss": 0.6015684800000001,
+            "accuracy_score": 0.39843151999999993
+        },
+        {
+            "trial": 3,
+            "opt": "Adam",
+            "seed": 1665,
+            "final_train_loss": 0.7562052000000001,
+            "final_test_loss": 0.7522091200000002,
+            "accuracy_score": 0.24779087999999982
+        },
+        {
+            "trial": 1,
+            "opt": "QuGStep",
+            "seed": 555,
+            "final_train_loss": 0.48095659999999985,
+            "final_test_loss": 0.45882724,
+            "accuracy_score": 0.54117276
+        },
+        {
+            "trial": 0,
+            "opt": "Adam",
+            "seed": 0,
+            "final_train_loss": 0.6889525333333334,
+            "final_test_loss": 0.6946568399999999,
+            "accuracy_score": 0.30534316000000006
+        },
+        {
+            "trial": 0,
+            "opt": "QuGStep",
+            "seed": 0,
+            "final_train_loss": 0.5659812666666666,
+            "final_test_loss": 0.5646214799999999,
+            "accuracy_score": 0.4353785200000001
+        },
+        {
+            "trial": 3,
+            "opt": "QuGStep",
+            "seed": 1665,
+            "final_train_loss": 0.5191456666666666,
+            "final_test_loss": 0.5063738,
+            "accuracy_score": 0.4936262
+        },
+        {
+            "trial": 1,
+            "opt": "Adam",
+            "seed": 555,
+            "final_train_loss": 0.5141345333333334,
+            "final_test_loss": 0.4986927599999996,
+            "accuracy_score": 0.5013072400000004
+        },
+        {
+            "trial": 2,
+            "opt": "Adam",
+            "seed": 1110,
+            "final_train_loss": 0.6337222666666666,
+            "final_test_loss": 0.6350233599999998,
+            "accuracy_score": 0.3649766400000002
+        },
+        {
+            "trial": 4,
+            "opt": "Adam",
+            "seed": 2220,
+            "final_train_loss": 0.6571286000000002,
+            "final_test_loss": 0.6366363199999998,
+            "accuracy_score": 0.3633636800000002
+        },
+        {
+            "trial": 5,
+            "opt": "Adam",
+            "seed": 2775,
+            "final_train_loss": 0.7125465333333332,
+            "final_test_loss": 0.6974292000000003,
+            "accuracy_score": 0.3025707999999997
+        },
+        {
+            "trial": 4,
+            "opt": "QuGStep",
+            "seed": 2220,
+            "final_train_loss": 0.5212164666666665,
+            "final_test_loss": 0.50447676,
+            "accuracy_score": 0.49552324000000003
+        },
+        {
+            "trial": 6,
+            "opt": "SPSA",
+            "seed": 3330,
+            "final_train_loss": 0.5504309333333334,
+            "final_test_loss": 0.5413041599999999,
+            "accuracy_score": 0.4586958400000001
+        },
+        {
+            "trial": 7,
+            "opt": "SPSA",
+            "seed": 3885,
+            "final_train_loss": 0.5558664666666666,
+            "final_test_loss": 0.5623735200000001,
+            "accuracy_score": 0.43762647999999993
+        },
+        {
+            "trial": 8,
+            "opt": "SPSA",
+            "seed": 4440,
+            "final_train_loss": 0.5443471333333334,
+            "final_test_loss": 0.5367034399999998,
+            "accuracy_score": 0.4632965600000002
+        },
+        {
+            "trial": 9,
+            "opt": "SPSA",
+            "seed": 4995,
+            "final_train_loss": 0.5518068666666668,
+            "final_test_loss": 0.54731204,
+            "accuracy_score": 0.45268796
+        },
+        {
+            "trial": 5,
+            "opt": "QuGStep",
+            "seed": 2775,
+            "final_train_loss": 0.5607045333333335,
+            "final_test_loss": 0.5464009199999998,
+            "accuracy_score": 0.45359908000000015
+        },
+        {
+            "trial": 6,
+            "opt": "Adam",
+            "seed": 3330,
+            "final_train_loss": 0.6447149333333332,
+            "final_test_loss": 0.6305869999999998,
+            "accuracy_score": 0.3694130000000002
+        },
+        {
+            "trial": 6,
+            "opt": "QuGStep",
+            "seed": 3330,
+            "final_train_loss": 0.49598306666666664,
+            "final_test_loss": 0.47827559999999986,
+            "accuracy_score": 0.5217244000000001
+        },
+        {
+            "trial": 7,
+            "opt": "Adam",
+            "seed": 3885,
+            "final_train_loss": 0.8392961333333334,
+            "final_test_loss": 0.8434319199999999,
+            "accuracy_score": 0.1565680800000001
+        },
+        {
+            "trial": 7,
+            "opt": "QuGStep",
+            "seed": 3885,
+            "final_train_loss": 0.5772617333333334,
+            "final_test_loss": 0.58165424,
+            "accuracy_score": 0.41834576
+        },
+        {
+            "trial": 8,
+            "opt": "Adam",
+            "seed": 4440,
+            "final_train_loss": 0.6646438,
+            "final_test_loss": 0.6660640400000001,
+            "accuracy_score": 0.3339359599999999
+        },
+        {
+            "trial": 9,
+            "opt": "Adam",
+            "seed": 4995,
+            "final_train_loss": 0.6200142000000001,
+            "final_test_loss": 0.6046435200000001,
+            "accuracy_score": 0.3953564799999999
+        },
+        {
+            "trial": 8,
+            "opt": "QuGStep",
+            "seed": 4440,
+            "final_train_loss": 0.5394586666666666,
+            "final_test_loss": 0.5350928799999997,
+            "accuracy_score": 0.46490712000000034
+        },
+        {
+            "trial": 9,
+            "opt": "QuGStep",
+            "seed": 4995,
+            "final_train_loss": 0.5859192666666666,
+            "final_test_loss": 0.5784845200000001,
+            "accuracy_score": 0.42151547999999994
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+2026-01-28 10:40:02,041 - INFO - [START] Experiment Initialized: Exp01_Trainability_20260128_104002_28f3
+2026-01-28 10:40:02,042 - INFO - [CONFIG] Configuration: {
+  "depths": [
+    2,
+    4,
+    8,
+    12
+  ],
+  "trials": 10,
+  "shots": 1000,
+  "qubits": 6
+}
+2026-01-28 10:40:12,313 - INFO - Step 5: Progress: 5/120 tasks done.
+2026-01-28 10:41:25,583 - INFO - Step 10: Progress: 10/120 tasks done.
+2026-01-28 10:41:29,386 - INFO - Step 15: Progress: 15/120 tasks done.
+2026-01-28 10:41:30,271 - INFO - Step 20: Progress: 20/120 tasks done.
+2026-01-28 10:42:47,409 - INFO - Step 25: Progress: 25/120 tasks done.
+2026-01-28 10:42:50,445 - INFO - Step 30: Progress: 30/120 tasks done.
+2026-01-28 10:42:56,999 - INFO - Step 35: Progress: 35/120 tasks done.
+2026-01-28 10:45:40,951 - INFO - Step 40: Progress: 40/120 tasks done.
+2026-01-28 10:46:50,047 - INFO - Step 45: Progress: 45/120 tasks done.
+2026-01-28 10:46:55,302 - INFO - Step 50: Progress: 50/120 tasks done.
+2026-01-28 10:49:34,167 - INFO - Step 55: Progress: 55/120 tasks done.
+2026-01-28 10:50:03,784 - INFO - Step 60: Progress: 60/120 tasks done.
+2026-01-28 10:50:58,186 - INFO - Step 65: Progress: 65/120 tasks done.
+2026-01-28 10:59:10,024 - INFO - Step 70: Progress: 70/120 tasks done.
+2026-01-28 11:01:38,756 - INFO - Step 75: Progress: 75/120 tasks done.
+2026-01-28 11:02:33,288 - INFO - Step 80: Progress: 80/120 tasks done.
+2026-01-28 11:10:44,329 - INFO - Step 85: Progress: 85/120 tasks done.
+2026-01-28 11:11:20,658 - INFO - Step 90: Progress: 90/120 tasks done.
+2026-01-28 11:13:40,920 - INFO - Step 95: Progress: 95/120 tasks done.
+2026-01-28 11:26:32,027 - INFO - Step 100: Progress: 100/120 tasks done.
+2026-01-28 11:34:09,813 - INFO - Step 105: Progress: 105/120 tasks done.
+2026-01-28 11:36:36,321 - INFO - Step 110: Progress: 110/120 tasks done.
+2026-01-28 11:48:05,285 - INFO - Step 115: Progress: 115/120 tasks done.
+2026-01-28 11:55:16,263 - INFO - Step 120: Progress: 120/120 tasks done.
+2026-01-28 11:55:16,707 - INFO - [DONE] Run Complete. Success: True
+2026-01-28 11:55:16,715 - INFO - [SAVED] Results saved to: results\Exp01_Trainability_20260128_104002_28f3\metrics.json
