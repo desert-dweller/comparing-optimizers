@@ -1,0 +1,10 @@
+2026-01-28 17:05:58,526 - INFO - [START] Experiment Initialized: Exp02_Robustness_20260128_170558_7d32
+2026-01-28 17:05:58,528 - INFO - [CONFIG] Configuration: {
+  "shot_levels": [
+    100,
+    500,
+    1000,
+    5000
+  ],
+  "fixed_depth": 8
+}

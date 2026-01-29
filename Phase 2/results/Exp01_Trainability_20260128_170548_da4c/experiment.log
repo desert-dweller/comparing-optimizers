@@ -1,0 +1,22 @@
+2026-01-28 17:05:48,191 - INFO - [START] Experiment Initialized: Exp01_Trainability_20260128_170548_da4c
+2026-01-28 17:05:48,202 - INFO - [CONFIG] Configuration: {
+  "depths": [
+    2,
+    4,
+    8
+  ],
+  "trials": 5,
+  "shots": 1000,
+  "qubits": 8
+}
+2026-01-28 17:06:20,921 - INFO - Step 5: Progress: 5/45 tasks done.
+2026-01-28 17:11:33,261 - INFO - Step 10: Progress: 10/45 tasks done.
+2026-01-28 17:11:47,916 - INFO - Step 15: Progress: 15/45 tasks done.
+2026-01-28 17:12:04,348 - INFO - Step 20: Progress: 20/45 tasks done.
+2026-01-28 17:24:58,905 - INFO - Step 25: Progress: 25/45 tasks done.
+2026-01-28 17:25:14,045 - INFO - Step 30: Progress: 30/45 tasks done.
+2026-01-28 17:25:38,129 - INFO - Step 35: Progress: 35/45 tasks done.
+2026-01-28 17:59:29,028 - INFO - Step 40: Progress: 40/45 tasks done.
+2026-01-28 17:59:54,727 - INFO - Step 45: Progress: 45/45 tasks done.
+2026-01-28 17:59:56,170 - INFO - [DONE] Run Complete. Success: True
+2026-01-28 17:59:56,212 - INFO - [SAVED] Results saved to: results\Exp01_Trainability_20260128_170548_da4c\metrics.json
